@@ -22,8 +22,17 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400;1,600&family=Zilla+Slab+Highlight:wght@700&display=swap"
+      rel="stylesheet"
+    />
 
     <style>
+      body {
+        background-image: linear-gradient(180deg, #eee, #fff 100px, #fff);
+      }
       .accordion-button:not(.collapsed) {
         background-color: #fff;
       }
@@ -34,18 +43,6 @@
       .accordion-button::after {
         background-image: url(img/plus.png);
         background-size: 16px;
-      }
-      .nav-link:hover {
-        text-decoration: underline;
-      }
-      .float-end:hover {
-        text-decoration: underline;
-      }
-      .a .link-dark:hover {
-        text-decoration: underline;
-      }
-      .card-link:hover {
-        text-decoration: none;
       }
     </style>
   </head>
@@ -59,13 +56,13 @@
           href="/"
           class="d-flex align-items-center text-dark text-decoration-none"
         >
-          <span class="fs-3 fw-semibold">Tumitra.com</span>
+          <span class="fs-3 fw-semibold">http://tumitra.com/</span>
         </a>
 
         <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
           <span class="navbar-text me-1 fw-bold"> Email :</span>
           <a
-            class="nav-link me-3 py-2 text-dark"
+            class="nav-link me-3 py-2 text-primary text-decoration-underline"
             href="mailto:tumitra.tps@gmail.com"
             >tumitra.tps@gmail.com</a
           >
@@ -73,7 +70,9 @@
       </div>
 
       <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-        <h1 class="display-3 fw-semibold">Office Supplies Solution</h1>
+        <h1 class="display-3" style="font-family: Playfair Display">
+          <em>Office Supplies Solution</em>
+        </h1>
         <p class="lead text-muted">
           <strong class="fw-semibold">CV. Tumitra Prima Sarana</strong> is a
           general supplier and printing company for office or other purposes.
@@ -146,14 +145,11 @@
           </div>
         </div>
       </div>
-      <div class="card rounded-0" style="background-color: transparent">
-        <div
-          class="card-header rounded-0"
-          style="background-color: transparent"
-        >
+      <div class="card">
+        <div class="card-header">
           <i class="bi bi-blockquote-left fa-lg"></i> Quote
         </div>
-        <div class="card-body" style="background-color: transparent">
+        <div class="card-body">
           <blockquote class="blockquote mb-0">
             <p>"Life is for service."</p>
             <footer class="blockquote-footer">
@@ -317,7 +313,7 @@
               <a
                 href="https://goo.gl/maps/kEzLZtcsbZmLK6gd6"
                 target="_blank"
-                class="card-link text-dark"
+                class="card-link"
                 >Google Map</a
               >
             </div>
@@ -337,7 +333,7 @@
           </div>
         </div>
         <div class="col-sm-4">
-          <div class="d-grid gap-2 mt-4">
+          <div class="d-grid gap-2 mt-3">
             <a
               href="mailto:tumitra.tps@gmail.com"
               target="_blank"
@@ -350,6 +346,9 @@
               class="btn btn-outline-dark rounded-0 mt-1"
               >Message</a
             >
+            <p class="card-text text-end">
+              <small class="text-muted"><i>Thank you for your trust!</i></small>
+            </p>
           </div>
         </div>
       </div>
@@ -373,7 +372,7 @@
         <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
           <li class="ms-3">
             <p class="float-end mt-1">
-              <a href="#" class="link-dark text-decoration-none">Back to top</a>
+              <a href="#">Back to top</a>
             </p>
           </li>
         </ul>
