@@ -24,9 +24,7 @@
     />
 
     <style>
-      body {
-        background-image: linear-gradient(180deg, #eee, #fff 100px, #fff);
-      }
+      
       .accordion-button:not(.collapsed) {
         background-color: #fff;
       }
@@ -38,18 +36,20 @@
         background-image: url(img/plus.png);
         background-size: 16px;
       }
+      
     </style>
   </head>
   <body>
     <!-- navbar -->
-
     <div class="container px-4">
       <nav class="navbar border-bottom">
-        <a class="navbar-brand fw-semibold" href="#">https://tumitra.com/</a>
+        <div class="container-fluid">
+          <a class="navbar-brand me-auto" href="#">https://tumitra.com/</a>
+        </div>
       </nav>
     </div>
-    <!-- header -->
-    <div class="container px-4 pt-2 pb-5">
+
+    <div class="container px-4 pt-2">
       <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
         <h1 class="display-1" style="font-family: 'Times New Roman'">
           <em>Office Supplies Solution</em>
@@ -118,7 +118,7 @@
             <i class="fa-solid fa-trash-can"></i>
           </div>
           <div>
-            <h2>Houseware</h2>
+            <h2>Household</h2>
             <p>
               We provide a variety of household appliances to clean your
               workplace.
@@ -128,8 +128,46 @@
       </div>
     </div>
 
+    <!-- banner -->
+    <div class="container px-4 pb-5">
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <div class="card rounded-0">
+            <div class="row g-0">
+              <div class="col-md-5">
+                <img src="img/banner.png" class="img-fluid" alt="...">
+              </div>
+              <div class="col-md-7">
+                <div class="card-body">
+                  <h5 class="card-title">Printing</h5>
+                  <p class="card-text">We offer Digital / Offset / Large format printing and Book binding services.</p>
+                  <p class="card-text"><small class="text-muted">*Chat with us for product requests.</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card mb-3 rounded-0" >
+            <div class="row g-0">
+              <div class="col-md-5">
+                <img src="img/banner1.png" class="img-fluid" alt="...">
+              </div>
+              <div class="col-md-7">
+                <div class="card-body">
+                  <h5 class="card-title">Cleaning</h5>
+                  <p class="card-text">We offer Cleaning equipment, Air fresheners and Gardening tools / Brushcutters.</p>
+                  <p class="card-text"><small class="text-muted">*Chat with us for product requests.</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- brand -->
-    <div class="container px-4 py-5">
+    <div class="container px-4 pb-5">
       <h2 class="pb-3 border-bottom">
         Brands <span class="fs-6 fw-normal">// Lots of Choices</span>
       </h2>
@@ -165,7 +203,7 @@
     </div>
 
     <!-- masonry -->
-    <div class="container py-5">
+    <div class="container px-4 pb-5">
       <div class="row" data-masonry='{"percentPosition": true }'>
         <div class="col-sm-6 col-lg-4 mb-4">
           <div class="card rounded-0">
@@ -229,7 +267,7 @@
     </div>
 
     <!-- faqs -->
-    <div class="container px-4 py-5">
+    <div class="container px-4 pb-5">
       <h2 class="pb-3 border-bottom">
         FAQs
         <span class="fs-6 fw-normal">// Frequently Asked Questions</span>
@@ -325,7 +363,7 @@
     </div>
 
     <!-- about -->
-    <div class="container py-5">
+    <div class="container px-4 pb-5">
       <div class="px-4 text-center">
         <img
           class="d-block mx-auto mb-4"
@@ -342,7 +380,7 @@
             <p>*Life is for service.</p>
             <footer class="blockquote-footer">
               Fred Rogers
-              <cite title="Source Title"> - American Television Host</cite>
+              <cite title=""> - American Television Host</cite>
             </footer>
           </blockquote>
         </div>
@@ -350,7 +388,7 @@
     </div>
 
     <!-- contact -->
-    <div class="container px-4 py-5">
+    <div class="container px-4 pb-5">
       <h2 class="pb-3 border-bottom my-5">
         Contact Us <span class="fs-6 fw-normal">// Get in Touch</span>
       </h2>
@@ -411,7 +449,7 @@
     </div>
 
     <!-- footer -->
-    <div class="container">
+    <div class="container px-4">
       <footer
         class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
       >
