@@ -21,90 +21,86 @@
   </head>
   <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg border-bottom border-light-subtle">
+    <nav class="navbar py-3 fixed-top">
       <div class="container">
-        <a
-          class="navbar-brand fw-semibold ms-2"
-          style="font-size: 18px"
-          href="#"
-          >Shop w/ Tumitra
+        <a class="navbar-brand me-4" href="#">
+          <img
+            src="img/logo.png"
+            alt="Tumitra"
+            title="Tumitra Prima Sarana - Home"
+            width="43"
+            height="40" />
         </a>
-        <button
-          class="navbar-toggler border-0"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarText"
-          aria-controls="navbarText"
-          aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navbar-nav me-auto ms-2 mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="#product">Our Products</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#about"
-                >Why Choose Us?</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#faq">FAQs</a>
-            </li>
-          </ul>
-          <div class="d-lg-flex col-lg-3 justify-content-lg-end">
+        <div class="vr"></div>
+        <ul class="nav me-auto">
+          <li class="nav-item dropdown ms-3">
             <a
-              class="btn btn-dark btn-sm px-3 rounded-1 mb-3 mb-lg-0"
-              href="mailto:tumitra.tps@gmail.com"
-              target="_blank"
+              class="nav-link link-dark fw-semibold dropdown-toggle"
+              href="#"
               role="button"
-              >Send Email</a
-            >
-          </div>
-        </div>
+              data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Browse
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#product">Our Services</a></li>
+              <li><a class="dropdown-item" href="#about">Why Choose Us?</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="#faq">FAQs</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <a
+              class="nav-link link-dark"
+              href="mailto:tumitra.tps@gmail.com"
+              title="Send Email"
+              target="_blank"
+              ><i class="bi bi-envelope-paper fs-5"></i
+            ></a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link link-dark"
+              href="tel:+62811693570"
+              title="Call Us"
+              target="_blank"
+              ><i class="bi bi-telephone-plus fs-5"></i
+            ></a>
+          </li>
+        </ul>
       </div>
     </nav>
 
     <!-- hero -->
-    <div class="hero px-4 pt-5 text-center">
-      <h1 class="display-2 fw-bold animate__animated animate__tada">
-        Hello, Mitra!
-      </h1>
+    <div class="hero px-4 pt-5 mt-5 text-center">
       <div class="col-lg-6 mx-auto">
+        <h1 class="display-4 fw-semibold">
+          The right choice for office equipment.
+        </h1>
         <p class="text-muted lead mb-4">
           Dapatkan berbagai macam kebutuhan perlengkapan kantor anda bersama
           kami dan Gratis ongkos kirim tanpa minimal belanja.
-          <span
-            class="badge fw-semibold text-success bg-success bg-opacity-10 border border-success border-opacity-10 rounded-1"
-            >#khususbatam</span
+          <span class="badge text-bg-light fw-semibold border"
+            >*Khusus Batam</span
           >
         </p>
       </div>
-      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-2">
         <a
-          class="btn btn-dark px-3 py-2 rounded-1"
+          class="btn btn-dark px-5 py-2 rounded-pill"
           href="https://api.whatsapp.com/send?phone=+62811693570&text=Hai! Tumitra.. "
           target="_blank"
           role="button"
-          >WhatsApp Messenger</a
-        >
-      </div>
-      <div class="d-flex justify-content-center py-3">
-        <p class="mx-2">View or Download <i class="bi bi-download"></i></p>
-        <span class="px-1">.</span>
-        <a
-          href="img/Katalog produk.pdf"
-          target="_blank"
-          class="dwnld text-reset mx-2"
-          >Katalog Produk</a
-        >
+          >Order Right Now <i class="bi bi-arrow-right align-middle ms-2"></i
+        ></a>
       </div>
     </div>
 
     <!-- about -->
-    <div class="container px-4 py-3" id="about">
-      <div class="row flex-lg-row-reverse align-items-center g-5">
+    <div class="container px-4 pt-5" id="about">
+      <div class="row flex-lg-row-reverse align-items-center g-5 pt-4">
         <div class="col-lg-6 text-center">
           <img
             src="img/about_img1.png"
@@ -112,7 +108,7 @@
             title="Tentang Tumitra"
             alt="tentang kami" />
         </div>
-        <div class="col-lg-6 mb-4">
+        <div class="col-lg-6 mb-5">
           <h2 class="fw-bold lh-1 mb-3">Office Supplies Solution</h2>
           <p class="text-muted">
             Kami perusahaan yang bergerak di bidang pengadaan Barang / Jasa yang
@@ -125,7 +121,7 @@
 
     <div class="container">
       <div
-        class="row align-items-center justify-content-center mb-1 mt-3 mb-md-5 text-center">
+        class="row align-items-center justify-content-center mb-md-5 text-center">
         <div class="col-md-3 col-6 mb-5 mb-md-0 border-end">
           <h6>Average Rating</h6>
           <p>
@@ -149,12 +145,11 @@
           <p><small class="text-muted">24/7 Service.</small></p>
         </div>
       </div>
-      <hr class="d-lg-none" />
     </div>
 
     <!-- features -->
     <div class="container px-4 pt-5" id="product">
-      <div class="row flex-lg-row-reverse align-items-center g-5">
+      <div class="row flex-lg-row-reverse align-items-center g-5 pt-5">
         <div class="col-lg-7 text-start">
           <h2 class="fw-bold lh-1 mb-3">General Supplier and Printing</h2>
           <p class="text-muted">
@@ -164,17 +159,17 @@
           </p>
           <img src="img/verified.png" class="float-end" alt="" />
         </div>
-        <div class="col-lg-5 mb-5">
+        <div class="col-lg-5">
           <div class="card rounded-1">
             <div
-              class="card-header bg-secondary bg-opacity-10 text-center p-3 rounded-top-1">
+              class="card-header bg-secondary bg-opacity-10 text-center p-3 rounded-top-1 fw-bold">
               Daftar Barang / Jasa
             </div>
             <ul class="list-group list-group-flush list-group-numbered p-2">
               <li
                 class="list-group-item d-flex justify-content-between align-items-start">
                 <div class="ms-2 me-auto">
-                  <div class="fw-bold">Perlengkapan Kantor</div>
+                  <div class="fw-semibold">Perlengkapan Kantor</div>
                   <span class="text-muted"
                     >Alat Tulis & Kertas Multi Fungsi</span
                   >
@@ -183,21 +178,21 @@
               <li
                 class="list-group-item d-flex justify-content-between align-items-start">
                 <div class="ms-2 me-auto">
-                  <div class="fw-bold">Percetakan</div>
+                  <div class="fw-semibold">Percetakan</div>
                   <span class="text-muted">Formulir & Nota</span>
                 </div>
               </li>
               <li
                 class="list-group-item d-flex justify-content-between align-items-start">
                 <div class="ms-2 me-auto">
-                  <div class="fw-bold">Peralatan Kebersihan</div>
+                  <div class="fw-semibold">Peralatan Kebersihan</div>
                   <span class="text-muted">Pembersih & Pengharum Ruangan</span>
                 </div>
               </li>
               <li
                 class="list-group-item d-flex justify-content-between align-items-start">
                 <div class="ms-2 me-auto">
-                  <div class="fw-bold">Elektrikal</div>
+                  <div class="fw-semibold">Elektrikal</div>
                   <span class="text-muted">Lampu & Saklar</span>
                 </div>
               </li>
@@ -205,12 +200,11 @@
           </div>
         </div>
       </div>
-      <hr class="d-lg-none" />
     </div>
 
     <!-- faqs -->
-    <div class="px-4 py-5 text-center" id="faq">
-      <div class="col-lg-7 mx-auto">
+    <div class="px-4 pt-5 text-center" id="faq">
+      <div class="col-lg-7 pt-5 mx-auto">
         <h2 class="fw-bold lh-1 mb-3"><i class="bi bi-plus"></i>FAQs</h2>
         <div class="accordion text-start" id="accordionExample">
           <div class="accordion-item border-0 border-bottom rounded-0">
@@ -316,7 +310,7 @@
       </div>
     </div>
 
-    <div class="px-4 text-center pb-5 mb-5">
+    <div class="px-4 pt-5 pb-4 text-center">
       <div class="col-lg-6 mx-auto">
         <h3 class="fw-normal" data-aos="zoom-in">
           “Tumitra is better than any other suppliers. we are very satisfied
@@ -333,7 +327,8 @@
     </div>
 
     <!-- contact -->
-    <div class="container py-4 my-4 border-top">
+
+    <div class="container mt-5 py-4 border-top">
       <div class="row align-items-center">
         <div class="col-lg-7 mb-3">
           <h5>Office Address</h5>
@@ -370,11 +365,12 @@
           </form>
         </div>
       </div>
+    </div>
 
-      <!-- footer -->
-      <div
-        class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-        <p>&copy; 2023 Tumitra, Cv. All rights reserved.</p>
+    <!-- footer -->
+    <div class="container border-top">
+      <div class="d-flex flex-column flex-sm-row justify-content-between py-3">
+        <p>&copy; 2022 Tumitra, Cv. All rights reserved.</p>
         <ul class="list-unstyled d-flex">
           <img src="img/footer.png" class="img-fluid" alt="office supplies" />
         </ul>
