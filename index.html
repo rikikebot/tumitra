@@ -121,7 +121,7 @@
           </p>
           <div class="d-grid gap-2 d-md-block">
             <a
-              class="btn btn-dark btn-md px-4 py-2"
+              class="btn btn-dark btn-md px-4 py-2 rounded-1"
               href="https://api.whatsapp.com/send?phone=+62811693570&text=Hai! Tumitra.. "
               target="_blank"
               role="button"
@@ -211,7 +211,12 @@
               <li
                 class="list-group-item d-flex justify-content-between align-items-start">
                 <div class="ms-2 me-auto">
-                  <div class="fw-semibold">Elektrikal</div>
+                  <div class="fw-semibold">
+                    Elektrikal<span
+                      class="position-absolute top-50 start-50 translate-middle badge rounded-pill bg-dark">
+                      New
+                    </span>
+                  </div>
                   <span class="text-muted">Lampu & Saklar</span>
                 </div>
               </li>
@@ -432,16 +437,6 @@
           })
           .catch((error) => console.error("Error!", error.message));
       });
-    </script>
-
-    <!-- tooltip -->
-    <script>
-      const tooltipTriggerList = document.querySelectorAll(
-        '[data-bs-toggle="tooltip"]'
-      );
-      const tooltipList = [...tooltipTriggerList].map(
-        (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
-      );
     </script>
 
     <!-- btn-scroll -->
